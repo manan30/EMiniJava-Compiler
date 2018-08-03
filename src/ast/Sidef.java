@@ -1,10 +1,10 @@
 package ast;
 
-public class Print extends Statement {
+public class Sidef extends Statement {
 
     public Expression printExpression;
 
-    public Print(Expression printExpression) {
+    public Sidef(Expression printExpression) {
         this.printExpression = printExpression;
     }
 

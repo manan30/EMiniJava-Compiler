@@ -1,11 +1,11 @@
 package ast;
 
-public class And extends Expression {
+public class Divide extends Expression {
 
     public Expression lhs;
     public Expression rhs;
 
-    public And(Expression lhs, Expression rhs) {
+    public Divide(Expression lhs, Expression rhs) {
         this.lhs = lhs;
         this.rhs = rhs;
     }

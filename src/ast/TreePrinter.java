@@ -34,11 +34,11 @@ public class TreePrinter implements Visitor<String> {
         return "(" + n.lhs.accept(this) + " - " + n.rhs.accept(this) + ")";
     }
 
-    public String visit(Times n) {
+    public String visit(Multiply n) {
         return "(" + n.lhs.accept(this) + " * " + n.rhs.accept(this) + ")";
     }
 
-    public String visit(Division n) {
+    public String visit(Divide n) {
         return "(" + n.lhs.accept(this) + " / " + n.rhs.accept(this) + ")";
     }
 
@@ -66,6 +66,46 @@ public class TreePrinter implements Visitor<String> {
         return "!" + n.expr.accept(this);
     }
 
+    @Override
+    public String visit(Program program) {
+        return null;
+    }
+
+    @Override
+    public String visit(ClassDeclaration classDeclaration) {
+        return null;
+    }
+
+    @Override
+    public String visit(MainClass mainClass) {
+        return null;
+    }
+
+    @Override
+    public String visit(MethodDeclaration methodDeclaration) {
+        return null;
+    }
+
+    @Override
+    public String visit(Type type) {
+        return null;
+    }
+
+    @Override
+    public String visit(ArrayAssign arrayAssign) {
+        return null;
+    }
+
+    @Override
+    public String visit(Sidef sidef) {
+        return null;
+    }
+
+    @Override
+    public String visit(StringLiteral stringLiteral) {
+        return null;
+    }
+
     // ##############   Statements   ##############
 
     public String visit(IfThenElse n) {
@@ -73,21 +113,21 @@ public class TreePrinter implements Visitor<String> {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(printInc());
         stringBuilder.append("if (");
-        stringBuilder.append(n.expr.accept(this));
+        stringBuilder.append(n.expression.accept(this));
         stringBuilder.append(") {\n");
 
         incLevel();
 
-        stringBuilder.append(n.then.accept(this));
+        stringBuilder.append(n.thenStatement.accept(this));
 
         decLevel();
 
-        if (!(n.elze.accept(this).equals(""))) {
+        if (!(n.elseStatement.accept(this).equals(""))) {
 
             stringBuilder.append(printInc());
             stringBuilder.append("} else {\n");
             incLevel();
-            stringBuilder.append(n.elze.accept(this));
+            stringBuilder.append(n.elseStatement.accept(this));
             decLevel();
 
         }
@@ -99,11 +139,11 @@ public class TreePrinter implements Visitor<String> {
     }
 
     public String visit(Print n) {
-        return printInc() + "println(\"" + n.msg + "\", " + n.varID + ");\n";
+        return printInc() + "println(\"" + n.printExpression.accept(this) + ");\n";
     }
 
     public String visit(Assign n) {
-        return printInc() + n.varID + " = " + n.expr.accept(this) + ";\n";
+        return printInc() + n.identifier + " = " + n.expression.accept(this) + ";\n";
     }
 
     public String visit(While n) {
@@ -111,7 +151,7 @@ public class TreePrinter implements Visitor<String> {
         StringBuilder strBuilder = new StringBuilder();
         strBuilder.append(printInc());
         strBuilder.append("while (");
-        strBuilder.append(n.expr.accept(this));
+        strBuilder.append(n.expression.accept(this));
         strBuilder.append(") {\n");
 
         incLevel();

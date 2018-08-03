@@ -25,7 +25,7 @@ import java.util.Stack;
  * side of a production) off the stack.  This leaves the parser in the state
  * it was in before any of those Symbols were matched.  Next the reduce-goto
  * table is consulted (using the new state and current lookahead Symbol as
- * indexes) to determine a new state to go to.  The parser then shifts to
+ * indexes) to determine a new state to go to.  The parser thenStatement shifts to
  * this goto state by pushing the left hand side Symbol of the production
  * (also containing the new state) onto the stack.<p>
  * <p>
@@ -95,7 +95,7 @@ import java.util.Stack;
  * <dt> void report_fatal_error(String message, Object info)
  * <dd> This method is called when a fatal error that cannot be recovered from
  * is encountered.  In the default implementation, it calls
- * report_error() to emit a message, then throws an exception.
+ * report_error() to emit a message, thenStatement throws an exception.
  * <dt> void syntax_error(Symbol cur_token)
  * <dd> This method is called as soon as syntax error is detected (but
  * before recovery is attempted).  In the default implementation it
@@ -212,7 +212,7 @@ public abstract class lr_parser {
      * directly (see get_reduce()).  When a reduce occurs, the handle
      * (corresponding to the RHS of the matched production) is popped off
      * the stack.  The new top of stack indicates a state.  This table is
-     * then indexed by that state and the LHS of the reducing production to
+     * thenStatement indexed by that state and the LHS of the reducing production to
      * indicate where to "shift" to.
      *
      * @see lr_parser#get_reduce
@@ -399,7 +399,7 @@ public abstract class lr_parser {
      * Report a fatal error.  This method takes a  message string and an
      * additional object (to be used by specializations implemented in
      * subclasses).  Here in the base class a very simple implementation
-     * is provided which reports the error then throws an exception.
+     * is provided which reports the error thenStatement throws an exception.
      *
      * @param message an error message.
      * @param info    an extra object reserved for use by specialized subclasses.
@@ -612,7 +612,7 @@ public abstract class lr_parser {
                 /* advance to the next Symbol */
                 cur_token = scan();
             }
-            /* if its less than zero, then it encodes a reduce action */
+            /* if its less than zero, thenStatement it encodes a reduce action */
             else if (act < 0) {
                 /* perform the action for the reduce */
                 lhs_sym = do_action((-act) - 1, this, stack, tos);
@@ -799,7 +799,7 @@ public abstract class lr_parser {
                 cur_token = scan();
                 debug_message("# Current token is " + cur_token);
             }
-            /* if its less than zero, then it encodes a reduce action */
+            /* if its less than zero, thenStatement it encodes a reduce action */
             else if (act < 0) {
                 /* perform the action for the reduce */
                 lhs_sym = do_action((-act) - 1, this, stack, tos);
@@ -860,7 +860,7 @@ public abstract class lr_parser {
      * pop the parseTree stack down to a point at which we have a shift out
      * of the top-most state on the error Symbol.  This represents the
      * initial error recovery configuration.  If no such configuration is
-     * found, then we fail.  Next a small number of "lookahead" or "parseTree
+     * found, thenStatement we fail.  Next a small number of "lookahead" or "parseTree
      * ahead" Symbols are read into a buffer.  The size of this buffer is
      * determined by error_sync_size() and determines how many Symbols beyond
      * the error must be matched to consider the recovery a success.  Next,
@@ -869,7 +869,7 @@ public abstract class lr_parser {
      * to "parseTree ahead" though the buffered lookahead Symbols.  The "parseTree ahead"
      * process simulates that actual parseTree, but does not modify the real
      * parser's configuration, nor execute any actions. If we can  parseTree all
-     * the stored Symbols without error, then the recovery is considered a
+     * the stored Symbols without error, thenStatement the recovery is considered a
      * success.  Once a successful recovery point is determined, we do an
      * actual parseTree over the stored input -- modifying the real parseTree
      * configuration and executing all actions.  Finally, we return the the
@@ -942,7 +942,7 @@ public abstract class lr_parser {
     /**
      * Put the (real) parseTree stack into error recovery configuration by
      * popping the stack down to a state that can shift on the special
-     * error Symbol, then doing the shift.  If no suitable state exists on
+     * error Symbol, thenStatement doing the shift.  If no suitable state exists on
      * the stack we return false
      *
      * @param debug should we produce debugging messages as we parseTree.
@@ -1203,7 +1203,7 @@ public abstract class lr_parser {
                 if (debug)
                     debug_message("# Current Symbol is #" + cur_err_token().sym);
             }
-            /* if its less than zero, then it encodes a reduce action */
+            /* if its less than zero, thenStatement it encodes a reduce action */
             else if (act < 0) {
                 /* perform the action for the reduce */
                 lhs_sym = do_action((-act) - 1, this, stack, tos);

@@ -1,9 +1,9 @@
 package ast;
 
 /* Skip represents empty statement.
- * It is useful e.g. as "else" block of and if-then-else statement
+ * It is useful e.g. as "else" block of and if-thenStatement-else statement
  */
-public class Skip extends SingleStatement {
+public class Skip extends Statement {
     public Skip() {
     }
 

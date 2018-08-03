@@ -1,13 +1,15 @@
 package ast;
 
-public class Assign extends Statement {
+public class ArrayAssign extends Statement {
 
     public String identifier;
+    public Expression sizeExpression;
     public Expression expression;
 
-    public Assign(String identifier, Expression expression) {
+    public ArrayAssign(String identifier, Expression sizeExpression, Expression expression) {
 
         this.identifier = identifier;
+        this.sizeExpression = sizeExpression;
         this.expression = expression;
 
     }
@@ -18,6 +20,10 @@ public class Assign extends Statement {
 
     public Expression getExpression() {
         return expression;
+    }
+
+    public Expression getSizeExpression() {
+        return sizeExpression;
     }
 
     public <R> R accept(Visitor<R> v) {

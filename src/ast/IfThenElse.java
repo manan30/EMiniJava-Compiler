@@ -2,18 +2,32 @@ package ast;
 
 public class IfThenElse extends Statement {
 
-    public Expression expr;
-    public Statement then;
-    public Statement elze;  // we cannot use "else" here since it is a reserved word
+    public Expression expression;
+    public Statement thenStatement;
+    public Statement elseStatement;
 
-    public IfThenElse(Expression expr, Statement then, Statement elze) {
-        this.expr = expr;
-        this.then = then;
-        this.elze = elze;
+    public IfThenElse(Expression expression, Statement thenStatement, Statement elseStatement) {
+
+        this.expression = expression;
+        this.thenStatement = thenStatement;
+        this.elseStatement = elseStatement;
+
+    }
+
+    public Expression getExpression() {
+        return expression;
+    }
+
+    public Statement getThenStatement() {
+        return thenStatement;
+    }
+
+    public Statement getElseStatement() {
+        return elseStatement;
     }
 
     public <R> R accept(Visitor<R> v) {
         return v.visit(this);
     }
-    
+
 }

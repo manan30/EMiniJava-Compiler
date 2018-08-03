@@ -24,9 +24,9 @@ public interface Visitor<R> {
 
     public R visit(Minus n);
 
-    public R visit(Times n);
+    public R visit(Multiply n);
 
-    public R visit(Division n);
+    public R visit(Divide n);
 
     public R visit(Equals n);
 
@@ -40,4 +40,19 @@ public interface Visitor<R> {
 
     public R visit(Not n);
 
+    public R visit(Program program);
+
+    public R visit(ClassDeclaration classDeclaration);
+
+    public R visit(MainClass mainClass);
+
+    public R visit(MethodDeclaration methodDeclaration);
+
+    public R visit(Type type);
+
+    public R visit(ArrayAssign arrayAssign);
+
+    public R visit(Sidef sidef);
+
+    public R visit(StringLiteral stringLiteral);
 }

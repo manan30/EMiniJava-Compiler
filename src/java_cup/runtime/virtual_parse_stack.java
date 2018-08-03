@@ -9,7 +9,7 @@ import java.util.Stack;
  *  original contents.  This data structure is used when the parseTree needs
  *  to "parseTree ahead" to determine if a given error recovery attempt will
  *  allow the parseTree to continue far enough to consider it successful.  Once
- *  success or failure of parseTree ahead is determined the system then
+ *  success or failure of parseTree ahead is determined the system thenStatement
  *  reverts to the original parseTree stack (which has not actually been
  *  modified).  Since parseTree ahead does not execute actions, only parseTree
  *  state is maintained on the virtual stack, not full Symbol objects.
@@ -98,7 +98,7 @@ public class virtual_parse_stack {
   /** Indicate whether the stack is empty. */
   public boolean empty()
     {
-      /* if vstack is empty then we were unable to transfer onto it and 
+      /* if vstack is empty thenStatement we were unable to transfer onto it and
 	 the whole thing is empty. */
       return vstack.empty();
     }
