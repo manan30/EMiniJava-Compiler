@@ -2,9 +2,9 @@ package lexer;
 
 import java.util.HashMap;
 
-class SymbolMapping {
+public class SymbolMapping {
 
-    static HashMap<String, Integer> symbolsMap = new HashMap<>();
+    public static HashMap<String, Integer> symbolsMap = new HashMap<>();
 
     static {
 
