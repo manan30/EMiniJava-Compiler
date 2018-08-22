@@ -412,13 +412,24 @@ public class Lexer implements java_cup.runtime.Scanner {
 
     /* user code: */
     StringBuilder string = new StringBuilder();
+    EMJavaSymbol currentSymbol = null;
 
     private EMJavaSymbol symbol(int type) {
-        return new EMJavaSymbol(type, yyline + 1, yycolumn + 1);
+
+        currentSymbol = new EMJavaSymbol(type, yyline + 1, yycolumn + 1);
+        return currentSymbol;
+
     }
 
     private EMJavaSymbol symbol(int type, Object value) {
-        return new EMJavaSymbol(type, yyline + 1, yycolumn + 1, value);
+
+        currentSymbol = new EMJavaSymbol(type, yyline + 1, yycolumn + 1, value);
+        return currentSymbol;
+
+    }
+
+    public EMJavaSymbol getCurrentSymbol() {
+        return currentSymbol;
     }
 
     /**

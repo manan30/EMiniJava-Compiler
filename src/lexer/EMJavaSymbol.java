@@ -1,16 +1,16 @@
 package lexer;
 
-class EMJavaSymbol extends java_cup.runtime.Symbol {
+public class EMJavaSymbol extends java_cup.runtime.Symbol {
 
     private int line, column;
 
-    EMJavaSymbol(int type, int line, int column) {
+    public EMJavaSymbol(int type, int line, int column) {
 
         this(type, line, column, -1, -1, null);
 
     }
 
-    EMJavaSymbol(int type, int line, int column, Object value) {
+    public EMJavaSymbol(int type, int line, int column, Object value) {
 
         this(type, line, column, -1, -1, value);
 
