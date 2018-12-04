@@ -2,17 +2,17 @@ package ast;
 
 public class Assign extends Statement {
 
-    public String identifier;
+    public Identifier identifier;
     public Expression expression;
 
-    public Assign(String identifier, Expression expression) {
+    public Assign(Identifier identifier, Expression expression) {
 
         this.identifier = identifier;
         this.expression = expression;
 
     }
 
-    public String getIdentifier() {
+    public Identifier getIdentifier() {
         return identifier;
     }
 

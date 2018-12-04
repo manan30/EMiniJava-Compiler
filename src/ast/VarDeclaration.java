@@ -2,21 +2,21 @@ package ast;
 
 public class VarDeclaration extends Tree {
 
-    public Type type;
-    public String varIdentifier;
+    private Type varType;
+    private Identifier varIdentifier;
 
-    public VarDeclaration(Type type, String varIdentifier) {
+    public VarDeclaration(Type varType, Identifier varIdentifier) {
 
-        this.type = type;
+        this.varType = varType;
         this.varIdentifier = varIdentifier;
 
     }
 
-    public Type getType() {
-        return type;
+    public Type getVarType() {
+        return varType;
     }
 
-    public String getVarIdentifier() {
+    public Identifier getVarIdentifier() {
         return varIdentifier;
     }
 

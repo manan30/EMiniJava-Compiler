@@ -2,11 +2,11 @@ package ast;
 
 public class ArrayAssign extends Statement {
 
-    public String identifier;
-    public Expression sizeExpression;
-    public Expression expression;
+    private Identifier identifier;
+    private Expression sizeExpression;
+    private Expression expression;
 
-    public ArrayAssign(String identifier, Expression sizeExpression, Expression expression) {
+    public ArrayAssign(Identifier identifier, Expression sizeExpression, Expression expression) {
 
         this.identifier = identifier;
         this.sizeExpression = sizeExpression;
@@ -14,7 +14,7 @@ public class ArrayAssign extends Statement {
 
     }
 
-    public String getIdentifier() {
+    public Identifier getIdentifier() {
         return identifier;
     }
 

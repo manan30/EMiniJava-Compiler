@@ -45,7 +45,7 @@ public class CompilerMain {
                 main.prettyPrinter(args);
                 break;
 
-            case "--type":
+            case "--varType":
                 main.typeAnalysis(args);
                 break;
 
@@ -70,7 +70,7 @@ public class CompilerMain {
                 System.out.println("--ast");
                 System.out.println("--name");
                 System.out.println("--pp");
-                System.out.println("--type");
+                System.out.println("--varType");
                 System.out.println("--cgen");
                 System.out.println("--cfg");
                 System.out.println("--opt");
@@ -84,7 +84,7 @@ public class CompilerMain {
                 System.out.println("--ast");
                 System.out.println("--name");
                 System.out.println("--pp");
-                System.out.println("--type");
+                System.out.println("--varType");
                 System.out.println("--help");
                 System.out.println("--cgen");
                 System.out.println("--cfg");

@@ -7,7 +7,7 @@ public class Type extends Tree {
     }
 
     public Identifier identifier;
-    public Typename typename;
+    private Typename typename;
 
     public Type(Typename typename) {
         this.typename = typename;

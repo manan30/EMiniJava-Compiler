@@ -4,12 +4,12 @@ import java.util.List;
 
 public class ClassDeclaration extends Tree {
 
-    public String classIdentifier;
-    public String classExtendsIdentifier;
-    public List<VarDeclaration> varDeclarations;
-    public List<MethodDeclaration> methodDeclarations;
+    private Identifier classIdentifier;
+    private Identifier classExtendsIdentifier;
+    private List<VarDeclaration> varDeclarations;
+    private List<MethodDeclaration> methodDeclarations;
 
-    public ClassDeclaration(String classIdentifier, String classExtendsIdentifier,
+    public ClassDeclaration(Identifier classIdentifier, Identifier classExtendsIdentifier,
                             List<VarDeclaration> varDeclarations, List<MethodDeclaration> methodDeclarations) {
 
         this.classIdentifier = classIdentifier;
@@ -19,11 +19,11 @@ public class ClassDeclaration extends Tree {
 
     }
 
-    public String getClassIdentifier() {
+    public Identifier getClassIdentifier() {
         return classIdentifier;
     }
 
-    public String getClassExtendsIdentifier() {
+    public Identifier getClassExtendsIdentifier() {
         return classExtendsIdentifier;
     }
 

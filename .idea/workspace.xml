@@ -2,9 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aaddb87-c3a3-437e-96c8-f6c0e8130f96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ast/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Identifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emj-grammar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/CompilerMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/And.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Assign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Equals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/IfThenElse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/IntLiteral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/LessThan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Minus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Neg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Not.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Or.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Plus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Print.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/SingleStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Skip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Times.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/TreePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Var.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/While.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory$ComplexSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory$Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/DefaultSymbolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/Scanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/Symbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/SymbolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/char_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/double_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/float_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/int_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/long_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/lr_parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/str_token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/virtual_parse_stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/EMJavaSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/Lexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/SymbolMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompilerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompilerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/ArrayAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayAssign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Assign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/ClassDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ClassDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/MethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/MethodDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/VarDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/VarDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_cup/runtime/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_cup/runtime/Symbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,43 +75,48 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
           <entry key="emj" value="158" />
+          <entry key="emj-grammar" value="105" />
           <entry key="flex" value="52" />
-          <entry key="java" value="5126" />
+          <entry key="java" value="9017" />
+          <entry key="md" value="105" />
           <entry key="txt" value="246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5126" />
+          <entry key="JAVA" value="9017" />
           <entry key="JFlex" value="52" />
-          <entry key="PLAIN_TEXT" value="415" />
+          <entry key="Markdown" value="105" />
+          <entry key="PLAIN_TEXT" value="520" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="CompilerMain" value="1" />
-          <entry key="emj" value="1" />
-          <entry key="flex" value="6" />
+          <entry key="emj" value="3" />
+          <entry key="emj-grammar" value="1" />
+          <entry key="flex" value="8" />
           <entry key="iml" value="1" />
-          <entry key="java" value="114" />
-          <entry key="lexed" value="2" />
+          <entry key="java" value="132" />
+          <entry key="lexed" value="5" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="115" />
-          <entry key="JFlex" value="6" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="133" />
+          <entry key="JFlex" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -68,7 +126,20 @@
     <favorites_list name="emj-compiler" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4995">
+              <caret line="333" column="8" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,6 +154,8 @@
       <find>ID</find>
       <find>getCurr</find>
       <find>sym</find>
+      <find>Start</find>
+      <find>Eq</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,8 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lexer/JFlexInput.flex" />
-        <option value="$PROJECT_DIR$/src/java_cup/runtime/char_token.java" />
         <option value="$PROJECT_DIR$/emj-compiler.iml" />
         <option value="$PROJECT_DIR$/src/java_cup/runtime/long_token.java" />
         <option value="$PROJECT_DIR$/src/ast/Var.java" />
@@ -121,16 +192,9 @@
         <option value="$PROJECT_DIR$/BinarySearch.emj" />
         <option value="$PROJECT_DIR$/src/ast/Block.java" />
         <option value="$PROJECT_DIR$/src/ast/Program.java" />
-        <option value="$PROJECT_DIR$/src/ast/ClassDeclaration.java" />
-        <option value="$PROJECT_DIR$/src/ast/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/ast/VarDeclaration.java" />
-        <option value="$PROJECT_DIR$/src/ast/MethodDeclaration.java" />
-        <option value="$PROJECT_DIR$/src/ast/Type.java" />
         <option value="$PROJECT_DIR$/src/ast/Statement.java" />
         <option value="$PROJECT_DIR$/src/ast/IfThenElse.java" />
         <option value="$PROJECT_DIR$/src/ast/While.java" />
-        <option value="$PROJECT_DIR$/src/ast/Assign.java" />
-        <option value="$PROJECT_DIR$/src/ast/ArrayAssign.java" />
         <option value="$PROJECT_DIR$/src/ast/Print.java" />
         <option value="$PROJECT_DIR$/src/ast/Sidef.java" />
         <option value="$PROJECT_DIR$/src/ast/And.java" />
@@ -147,8 +211,17 @@
         <option value="$PROJECT_DIR$/src/ast/Visitor.java" />
         <option value="$PROJECT_DIR$/src/ast/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/lexer/Lexer.java" />
-        <option value="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" />
         <option value="$PROJECT_DIR$/src/ast/Identifier.java" />
+        <option value="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" />
+        <option value="$PROJECT_DIR$/src/ast/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/ast/ClassDeclaration.java" />
+        <option value="$PROJECT_DIR$/src/ast/VarDeclaration.java" />
+        <option value="$PROJECT_DIR$/src/ast/MethodDeclaration.java" />
+        <option value="$PROJECT_DIR$/src/ast/Type.java" />
+        <option value="$PROJECT_DIR$/src/ast/Assign.java" />
+        <option value="$PROJECT_DIR$/src/ast/ArrayAssign.java" />
+        <option value="$PROJECT_DIR$/emj-grammar" />
+        <option value="$PROJECT_DIR$/emj-grammar.md" />
         <option value="$PROJECT_DIR$/src/parser/Parser.java" />
       </list>
     </option>
@@ -168,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,20 +258,12 @@
               <item name="emj-compiler" type="b2602c69:ProjectViewProjectNode" />
               <item name="emj-compiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emj-compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emj-compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -222,7 +288,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533584238742" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543900047528" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -280,6 +347,7 @@
       <workItem from="1533522370485" duration="3526000" />
       <workItem from="1533666307515" duration="34000" />
       <workItem from="1533666373270" duration="48000" />
+      <workItem from="1543883168644" duration="6697000" />
     </task>
     <task id="LOCAL-00001" summary="Lexer generation - I">
       <created>1533245809916</created>
@@ -306,7 +374,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19264000" />
+    <option name="totallyTimeSpent" value="25961000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,8 +387,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.2746781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -429,9 +498,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Parser generation - I" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -439,13 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lexer/JFlexInput.flex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -501,23 +560,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/For.java" />
-    <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CompilerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java_cup/runtime/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -547,61 +589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/ClassDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/Var.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/VarDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/MethodDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#100#101#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,27 +618,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/SingleStatement.java" />
-    <entry file="file://$PROJECT_DIR$/src/ast/Assign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/ArrayAssign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Sidef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/And.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -733,13 +703,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BinarySearch.lexed">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/lexer/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="425" column="32" selection-start-line="425" selection-start-column="32" selection-end-line="425" selection-end-column="32" />
+          <folding>
+            <element signature="e#18212#18213#0" expanded="true" />
+            <element signature="e#18248#18249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lexer/EMJavaSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="e#577#578#0" expanded="true" />
             <element signature="e#604#605#0" expanded="true" />
@@ -749,44 +727,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lexer/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15681">
-          <caret line="1155" column="28" selection-start-line="1155" selection-start-column="25" selection-end-line="1155" selection-end-column="28" />
-          <folding>
-            <element signature="e#18212#18213#0" expanded="true" />
-            <element signature="e#18248#18249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/Identifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
             <element signature="e#180#181#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lexer/SymbolMapping.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/ClassDeclaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/VarDeclaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearch.lexed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2849">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/MethodDeclaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Sidef.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lexer/SymbolMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lexer/JFlexInput.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="134" column="51" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Assign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/ArrayAssign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emj-grammar.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CompilerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4995">
+          <caret line="333" column="8" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

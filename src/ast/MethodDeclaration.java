@@ -5,14 +5,14 @@ import java.util.List;
 
 public class MethodDeclaration extends Tree {
 
-    public Type methodType;
-    public String methodIdentifier;
-    public HashMap<Type, String> methodArguments;
-    public List<VarDeclaration> varDeclarations;
-    public List<Statement> statements;
-    public Expression returnExpression;
+    private Type methodType;
+    private Identifier methodIdentifier;
+    private HashMap<Type, Identifier> methodArguments;
+    private List<VarDeclaration> varDeclarations;
+    private List<Statement> statements;
+    private Expression returnExpression;
 
-    public MethodDeclaration(Type methodType, String methodIdentifier, HashMap<Type, String> methodArguments,
+    public MethodDeclaration(Type methodType, Identifier methodIdentifier, HashMap<Type, Identifier> methodArguments,
                              List<VarDeclaration> varDeclarations, List<Statement> statements, Expression returnExpression) {
 
         this.methodType = methodType;
@@ -28,11 +28,11 @@ public class MethodDeclaration extends Tree {
         return methodType;
     }
 
-    public String getMethodIdentifier() {
+    public Identifier getMethodIdentifier() {
         return methodIdentifier;
     }
 
-    public HashMap<Type, String> getMethodArguments() {
+    public HashMap<Type, Identifier> getMethodArguments() {
         return methodArguments;
     }
 

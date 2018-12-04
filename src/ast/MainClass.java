@@ -2,24 +2,24 @@ package ast;
 
 public class MainClass extends Tree {
 
-    public String classIdentifier;
-    public String methodIdentifier;
+    private Identifier classIdentifier;
+    private Identifier mainMethodArgs;
     public Statement statement;
 
-    public MainClass(String classIdentifier, String methodIdentifier, Statement statement) {
+    public MainClass(Identifier classIdentifier, Identifier mainMethodArgs, Statement statement) {
 
         this.classIdentifier = classIdentifier;
-        this.methodIdentifier = methodIdentifier;
+        this.mainMethodArgs = mainMethodArgs;
         this.statement = statement;
 
     }
 
-    public String getClassIdentifier() {
+    public Identifier getClassIdentifier() {
         return classIdentifier;
     }
 
-    public String getMethodIdentifier() {
-        return methodIdentifier;
+    public Identifier getMainMethodArgs() {
+        return mainMethodArgs;
     }
 
     public Statement getStatement() {
