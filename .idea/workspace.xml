@@ -2,63 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aaddb87-c3a3-437e-96c8-f6c0e8130f96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/emj-grammar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/CompilerMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/And.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Assign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Block.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Division.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Equals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Expression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/IfThenElse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/IntLiteral.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/LessThan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Minus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Neg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Not.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Or.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/SingleStatement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Skip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Statement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Times.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/TreePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Var.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/Visitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/ast/While.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory$ComplexSymbol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory$Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/ComplexSymbolFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/DefaultSymbolFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/Scanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/Symbol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/SymbolFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/char_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/double_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/float_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/int_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/long_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/lr_parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/str_token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/java_cup/runtime/virtual_parse_stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/EMJavaSymbol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/Lexer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/emj-compiler/lexer/SymbolMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompilerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompilerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ArrayAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayAssign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Assign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ClassDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ClassDeclaration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/MethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/MethodDeclaration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/VarDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/VarDeclaration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_cup/runtime/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_cup/runtime/Symbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/EMJavaSymbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,6 +32,7 @@
           <entry key="emj" value="158" />
           <entry key="emj-grammar" value="105" />
           <entry key="flex" value="52" />
+          <entry key="gitignore" value="7" />
           <entry key="java" value="9017" />
           <entry key="md" value="105" />
           <entry key="txt" value="246" />
@@ -96,7 +43,7 @@
           <entry key="JAVA" value="9017" />
           <entry key="JFlex" value="52" />
           <entry key="Markdown" value="105" />
-          <entry key="PLAIN_TEXT" value="520" />
+          <entry key="PLAIN_TEXT" value="527" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -105,9 +52,11 @@
           <entry key="emj" value="3" />
           <entry key="emj-grammar" value="1" />
           <entry key="flex" value="8" />
+          <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
           <entry key="java" value="132" />
           <entry key="lexed" value="5" />
+          <entry key="md" value="1" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
@@ -116,7 +65,8 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="133" />
           <entry key="JFlex" value="8" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -127,7 +77,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4995">
@@ -135,6 +85,25 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -172,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/emj-compiler.iml" />
         <option value="$PROJECT_DIR$/src/java_cup/runtime/long_token.java" />
         <option value="$PROJECT_DIR$/src/ast/Var.java" />
         <option value="$PROJECT_DIR$/src/ast/Tree.java" />
@@ -223,6 +191,7 @@
         <option value="$PROJECT_DIR$/emj-grammar" />
         <option value="$PROJECT_DIR$/emj-grammar.md" />
         <option value="$PROJECT_DIR$/src/parser/Parser.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -254,12 +223,6 @@
               <item name="emj-compiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="emj-compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emj-compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -288,7 +251,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543900047528" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543900401131" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -347,7 +310,7 @@
       <workItem from="1533522370485" duration="3526000" />
       <workItem from="1533666307515" duration="34000" />
       <workItem from="1533666373270" duration="48000" />
-      <workItem from="1543883168644" duration="6697000" />
+      <workItem from="1543883168644" duration="7017000" />
     </task>
     <task id="LOCAL-00001" summary="Lexer generation - I">
       <created>1533245809916</created>
@@ -374,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25961000" />
+    <option name="totallyTimeSpent" value="26281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,16 +461,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Parser generation - I" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java_cup/runtime/lr_parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java_cup/runtime/long_token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -867,6 +820,21 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
         </state>
       </provider>
     </entry>
