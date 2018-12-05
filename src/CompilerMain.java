@@ -158,6 +158,7 @@ public class CompilerMain {
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (Exception e) {
+                e.printStackTrace();
                 System.out.println("Please check the input parameters.");
             } finally {
                 if (writer != null)

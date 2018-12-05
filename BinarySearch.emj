@@ -22,7 +22,7 @@ class BS {
 
     public int Start(int sz) {
 
-	    int aux01 ;
+	    String aux01 = "Manan";
 	    int aux02 ;
 	    aux01 = this.Init(sz);
 	    aux02 = this.Print();

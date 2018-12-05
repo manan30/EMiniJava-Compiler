@@ -2,57 +2,74 @@ package ast;
 
 public interface Visitor<R> {
 
-    // Statement
-    public R visit(Print n);
+    // Program
+    R visit(Program program);
 
-    public R visit(Assign n);
+    // Main Class
+    R visit(MainClass mainClass);
 
-    public R visit(Skip n);
+    // Class Declaration
+    R visit(ClassDeclaration classDeclaration);
 
-    public R visit(Block n);
+    // Var Declaration
+    R visit(VarDeclaration varDeclaration);
 
-    public R visit(IfThenElse n);
+    // Method Declaration
+    R visit(MethodDeclaration methodDeclaration);
 
-    public R visit(While n);
+    // Type
+    R visit(Type type);
+
+    // Statements
+    R visit(Print n);
+
+    R visit(Assign n);
+
+    R visit(ArrayAssign arrayAssign);
+
+    R visit(Skip n);
+
+    R visit(Block n);
+
+    R visit(IfThenElse n);
+
+    R visit(While n);
+
+    R visit(Sidef sidef);
 
     // Expression
-    public R visit(Var n);
+    R visit(Var n);
 
-    public R visit(IntLiteral n);
+    R visit(IntLiteral n);
 
-    public R visit(Plus n);
+    R visit(Plus n);
 
-    public R visit(Minus n);
+    R visit(Minus n);
 
-    public R visit(Multiply n);
+    R visit(Multiply n);
 
-    public R visit(Divide n);
+    R visit(Divide n);
 
-    public R visit(Equals n);
+    R visit(Equals n);
 
-    public R visit(LessThan n);
+    R visit(LessThan n);
 
-    public R visit(And n);
+    R visit(And n);
 
-    public R visit(Or n);
+    R visit(Or n);
 
-    public R visit(Neg n);
+    R visit(Neg n);
 
-    public R visit(Not n);
+    R visit(Not n);
 
-    public R visit(Program program);
+    R visit(New n);
 
-    public R visit(ClassDeclaration classDeclaration);
+    R visit(Size size);
 
-    public R visit(MainClass mainClass);
+    R visit(This tthis);
 
-    public R visit(MethodDeclaration methodDeclaration);
+    R visit(Boolean bool);
 
-    public R visit(Type type);
+    R visit(StringLiteral stringLiteral);
 
-    public R visit(ArrayAssign arrayAssign);
-
-    public R visit(Sidef sidef);
-
-    public R visit(StringLiteral stringLiteral);
 }

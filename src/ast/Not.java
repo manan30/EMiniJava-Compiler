@@ -2,7 +2,7 @@ package ast;
 
 public class Not extends Expression {
 
-    public Expression expr;
+    Expression expr;
 
     public Not(Expression expr) {
         this.expr = expr;

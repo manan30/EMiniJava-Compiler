@@ -2,7 +2,7 @@ package ast;
 
 public class Identifier extends Tree {
 
-    String idName;
+    private String idName;
 
     public Identifier(String idName) {
         this.idName = idName;

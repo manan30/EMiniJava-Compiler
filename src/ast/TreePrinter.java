@@ -67,12 +67,37 @@ public class TreePrinter implements Visitor<String> {
     }
 
     @Override
+    public String visit(New n) {
+        return null;
+    }
+
+    @Override
+    public String visit(Size size) {
+        return null;
+    }
+
+    @Override
+    public String visit(This tthis) {
+        return null;
+    }
+
+    @Override
+    public String visit(Boolean bool) {
+        return null;
+    }
+
+    @Override
     public String visit(Program program) {
         return null;
     }
 
     @Override
     public String visit(ClassDeclaration classDeclaration) {
+        return null;
+    }
+
+    @Override
+    public String visit(VarDeclaration varDeclaration) {
         return null;
     }
 

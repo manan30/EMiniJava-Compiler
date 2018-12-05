@@ -29,7 +29,7 @@ Expression: Expression ( && | || | == | < | + | - | * | / ) Expression |
             Identifier | 
             this | 
             new int [ Expression ] | 
-            new Identifier ( ) | 
+            new Identifier () | 
             ! Expression | 
             ( Expression )
             
@@ -37,7 +37,7 @@ Identifier: <IDENTIFIER>
 
 
 1. <IDENTIFIER> represents a sequence of letters, digits and underscores, starting with a letter. An identifier is not 
-a keyword. Identifiers are case-sensitive.
+   a keyword. Identifiers are case-sensitive.
 2. <INTEGER_LITERAL> represents a sequence of digits
 3. <STRING_LITERAL> represents a sequence of arbitrary characters, except new lines and ". You don't need to support 
 escape characters such as \n.

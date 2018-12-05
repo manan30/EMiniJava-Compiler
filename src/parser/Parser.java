@@ -1,6 +1,7 @@
 package parser;
 
 import ast.*;
+import ast.Boolean;
 import lexer.Lexer;
 import lexer.SymbolMapping;
 
@@ -326,12 +327,71 @@ public class Parser {
 
     }
 
-    private Expression parseExpression() {
+    private Expression parseExpression() throws ParseException, IOException {
 
         Expression expression = null;
 
+        if (true)
+            System.out.println("Hello");
+        else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("INT_LITERAL")) {
+
+            expression = new IntLiteral(Integer.parseInt(lexer.getCurrentSymbol().value.toString()));
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("STRING_LITERAL")) {
+
+            expression = new StringLiteral(lexer.getCurrentSymbol().value.toString());
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("BOOLEAN_LITERAL")) {
+
+            expression = new Boolean(lexer.getCurrentSymbol().value.toString());
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("ID")) {
+
+            //expression = parseIdentifier();
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("THIS")) {
+
+            eat(SymbolMapping.symbolsMap.get("THIS"));
+
+            expression = new This();
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("NEW")) {
+
+            eat(SymbolMapping.symbolsMap.get("NEW"));
+
+            if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("ID")) {
+
+                expression = new New(parseIdentifier());
+
+            } else {
+
+                eat(SymbolMapping.symbolsMap.get("INT"));
+                eat(SymbolMapping.symbolsMap.get("LBRACK"));
+
+                expression = new Size(parseExpression());
+
+                eat(SymbolMapping.symbolsMap.get("RBRACK"));
+
+            }
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("NOT")) {
+
+            eat(SymbolMapping.symbolsMap.get("NOT"));
+
+            expression = parseExpression();
+
+        } else {
+
+            eat(SymbolMapping.symbolsMap.get("LPAREN"));
+
+            expression = parseExpression();
+
+            eat(SymbolMapping.symbolsMap.get("RPAREN"));
+
+        }
+
         return expression;
-        
+
     }
 
     private Statement parseIfStatement() throws IOException, ParseException {
@@ -404,7 +464,7 @@ public class Parser {
 
     }
 
-    private Boolean condition() {
+    private boolean condition() {
 
         int current_value = lexer.getCurrentSymbol().sym;
 
