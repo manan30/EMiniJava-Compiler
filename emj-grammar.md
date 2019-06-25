@@ -20,7 +20,7 @@ Statement: { ( Statement )* } |
 
 Expression: Expression ( && | || | == | < | + | - | * | / ) Expression | 
             Expression [ Expression ] | 
-            Expression . length | 
+            Expression . dot | 
             Expression . Identifier ( ( Expression ( , Expression )* )? ) | 
             <INTEGER_LITERAL> | 
             "<STRING_LITERAL>" | 
