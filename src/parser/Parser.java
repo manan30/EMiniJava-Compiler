@@ -333,7 +333,35 @@ public class Parser {
 
         if (true)
             System.out.println("Hello");
-        else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("INT_LITERAL")) {
+        else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("ID")) {
+
+            //expression = parseIdentifier();
+
+        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("NOT")) {
+
+            eat(SymbolMapping.symbolsMap.get("NOT"));
+
+            expression = parseExpression();
+
+        } else {
+
+            eat(SymbolMapping.symbolsMap.get("LPAREN"));
+
+            expression = parseExpression();
+
+            eat(SymbolMapping.symbolsMap.get("RPAREN"));
+
+        }
+
+        return expression;
+
+    }
+
+    private Expression parseLiteral() throws ParseException, IOException {
+
+        Expression expression;
+
+        if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("INT_LITERAL")) {
 
             expression = new IntLiteral(Integer.parseInt(lexer.getCurrentSymbol().value.toString()));
 
@@ -344,10 +372,6 @@ public class Parser {
         } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("BOOLEAN_LITERAL")) {
 
             expression = new Boolean(lexer.getCurrentSymbol().value.toString());
-
-        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("ID")) {
-
-            //expression = parseIdentifier();
 
         } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("THIS")) {
 
@@ -374,23 +398,151 @@ public class Parser {
 
             }
 
-        } else if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("NOT")) {
+        } else
+            expression = new IDExpr(parseIdentifier().getIdName());
 
-            eat(SymbolMapping.symbolsMap.get("NOT"));
+        advance();
 
-            expression = parseExpression();
+        return expression;
+
+    }
+
+    private Expression praseUnary() throws IOException, ParseException {
+
+        return new Not(parseExpression());
+
+    }
+
+    private Expression parseBinary() throws IOException, ParseException {
+
+        Expression lhs = parseExpression();
+        Expression rhs;
+
+        if (SymbolMapping.symbolsMap.get("AND") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new And(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("OR") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Or(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("DEQ") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Equals(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("LT") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new LessThan(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("PLUS") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Plus(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("MINUS") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Minus(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("MULT") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Multiply(lhs, rhs);
+
+        } else if (SymbolMapping.symbolsMap.get("DIV") == lexer.getCurrentSymbol().sym) {
+
+            eat(lexer.getCurrentSymbol().sym);
+
+            rhs = parseExpression();
+
+            return new Divide(lhs, rhs);
 
         } else {
 
-            eat(SymbolMapping.symbolsMap.get("LPAREN"));
+            eat(lexer.getCurrentSymbol().sym);
 
-            expression = parseExpression();
+            if (lexer.getCurrentSymbol().sym == SymbolMapping.symbolsMap.get("LBRACK")) {
 
-            eat(SymbolMapping.symbolsMap.get("RPAREN"));
+                eat(lexer.getCurrentSymbol().sym);
+
+                Expression expression = parseExpression();
+
+                eat(lexer.getCurrentSymbol().sym);
+
+                return lhs;
+
+            } else {
+
+                eat(lexer.getCurrentSymbol().sym);
+
+                if (SymbolMapping.symbolsMap.get("LENGTH") == lexer.getCurrentSymbol().sym) {
+
+                    return new Dot(lhs, true, null, null);
+
+                } else {
+
+                    Identifier identifier = parseIdentifier();
+
+                    List<Expression> expressions = new ArrayList<>();
+
+                    eat(SymbolMapping.symbolsMap.get("LPAREN"));
+
+                    if (SymbolMapping.symbolsMap.get("RPAREN") != lexer.getCurrentSymbol().sym) {
+
+                        expressions.add(parseExpression());
+
+                        if (SymbolMapping.symbolsMap.get("COMMA") == lexer.getCurrentSymbol().sym) {
+
+                            advance();
+
+                            expressions.add(parseExpression());
+
+                            while (SymbolMapping.symbolsMap.get("RPAREN") != lexer.getCurrentSymbol().sym) {
+
+                                eat(SymbolMapping.symbolsMap.get("COMMA"));
+
+                                expressions.add(parseExpression());
+
+                            }
+
+                            eat(SymbolMapping.symbolsMap.get("RBRACE"));
+
+                        }
+
+                    }
+
+                    return new Dot(lhs, false, identifier, expressions);
+
+                }
+
+            }
 
         }
-
-        return expression;
 
     }
 

@@ -1,6 +1,8 @@
+import ast.Program;
 import java_cup.runtime.Symbol;
 import lexer.Lexer;
 import lexer.SymbolMapping;
+import parser.Parser;
 
 import java.io.*;
 
@@ -30,14 +32,14 @@ public class CompilerMain {
         switch (options) {
 
             case "--lex":
-                main.lexer(args);
+                main.lexer(args, "lex");
                 break;
 
-            /*case "--ast":
-                main.parser(args);
+            case "--ast":
+                main.lexer(args, "ast");
                 break;
 
-            case "--name":
+            /*case "--name":
                 main.nameAnalyser(args);
                 break;
 
@@ -95,7 +97,7 @@ public class CompilerMain {
 
     }
 
-    private void lexer(String[] filenames) throws IOException {
+    private void lexer(String[] filenames, String choice) throws IOException {
 
         if (filenames.length == 1) {
             System.out.println("Please specify at least 1 input file.");
@@ -129,23 +131,32 @@ public class CompilerMain {
 
                 Lexer lexer = new Lexer(reader);
 
-                Symbol symbol = lexer.next_token();
+                if (choice.equals("lex")) {
 
-                while (symbol != null && symbol.sym != SymbolMapping.symbolsMap.get("EOF")) {
+                    Symbol symbol = lexer.next_token();
 
-                    writer.write(symbol.toString());
-                    writer.write("\n");
+                    while (symbol != null && symbol.sym != SymbolMapping.symbolsMap.get("EOF")) {
 
-                    symbol = lexer.next_token();
-
-                    if (symbol.sym == SymbolMapping.symbolsMap.get("EOF")) {
                         writer.write(symbol.toString());
-                        break;
+                        writer.write("\n");
+
+                        symbol = lexer.next_token();
+
+                        if (symbol.sym == SymbolMapping.symbolsMap.get("EOF")) {
+                            writer.write(symbol.toString());
+                            break;
+                        }
+
                     }
 
-                }
+                    System.out.println("File Created :: " + filenames[i].substring(0, filenames[i].lastIndexOf(".")) + ".lexed");
 
-                System.out.println("File Created :: " + filenames[i].substring(0, filenames[i].lastIndexOf(".")) + ".lexed");
+                } else if (choice.equals("ast")) {
+
+                    Parser parser = new Parser(lexer);
+                    Program program = parser.parseProgram();
+
+                }
 
                 if (filenames.length > 2) {
                     System.out.println();

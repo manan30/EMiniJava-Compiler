@@ -72,4 +72,8 @@ public interface Visitor<R> {
 
     R visit(StringLiteral stringLiteral);
 
+    R visit(IDExpr idExpr);
+
+    R visit(Dot dot);
+
 }

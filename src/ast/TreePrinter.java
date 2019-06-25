@@ -131,6 +131,16 @@ public class TreePrinter implements Visitor<String> {
         return null;
     }
 
+    @Override
+    public String visit(IDExpr idExpr) {
+        return null;
+    }
+
+    @Override
+    public String visit(Dot dot) {
+        return null;
+    }
+
     // ##############   Statements   ##############
 
     public String visit(IfThenElse n) {
